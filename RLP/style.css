@@ -1,0 +1,878 @@
+@media only screen and (min-width: 601px) {
+    body {
+    margin: 0;
+    background-color: #1b1b1b;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+::-webkit-scrollbar {
+    width: 7px;
+    color: white;
+  }
+  ::-webkit-scrollbar-track {
+    background: black; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: gold; 
+    border-radius: 50px;
+  }
+* {
+    margin: 0;
+    padding: 0;
+}
+.body {
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-link {
+    list-style: none;
+    padding-bottom: 4px;
+}
+.nav-link > a {
+    color: white;
+    text-decoration: none;
+    font-family: "Kanit",sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 4px;
+    position: relative;
+}
+
+.navigation {
+    display: flex;
+    width: 45%;
+    min-width: 350px;
+    max-width: 550px;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.obchod {
+    list-style: none;
+    margin-inline: 50px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border: 3px solid gold;
+    padding: 3px;
+    border-radius: 50px;
+    left: 0px;
+}
+.obchod > a {
+    color: white;
+    text-decoration: none;
+    font-family: "Kanit",sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 4px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.aktivni {
+    border-bottom: 3px solid gold;
+}
+.background {
+    height: 350px; 
+    width: 100vw;
+    background-image: url(./obrázky/background.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1b1b;
+
+}
+.sekce {
+    font-family: "Kanit",sans-serif;
+    font-weight: 600;
+    color: gold;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-obsah {
+    color: white;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    font-family: sans-serif;
+}
+.Informace {
+    height: auto;
+    margin-top: -165px;
+    margin-left: 15px;
+    font-family: "Kanit",sans-serif;
+    font-weight: 550;
+    align-items: center;
+    color: gold;
+    font-size: 2.5vw;
+    border-bottom: 2px solid #f5f5f57a;
+    -webkit-text-size-adjust: none;
+}
+.info {
+    margin-top: 50px;
+    margin-left: -145px;
+    height: auto;
+    width: 60%;
+    display: flex;
+    font-family: "Kanit",sans-serif;
+    font-size: 1.5vw;
+    color: white;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #2b2b2b;
+    -webkit-text-size-adjust: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.info-text1 {
+    display: flex;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.info-text-bold1 {
+    display: flex;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.info-text2 {
+    display: flex;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+.info-text3 {
+    display: flex;
+    margin-left: -216px;
+    margin-bottom: 5px;
+}
+.obsah {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+.naserveru-obsah {
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 12.5%;
+    width: 75%;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.kolecko-naserveru{
+    background-color: #272727;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+.naserveru {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #272727;
+    justify-content: center;
+    border-radius: 100px;
+}
+#textnaserveru {
+    height: 45px;
+}
+.naserveru :hover {
+    animation: rotation 0.6s linear;
+    animation-iteration-count: 0.5;
+}
+.body-pravidla {
+    display: flex;
+    justify-content: center;
+}
+.souhlas-pravidla {
+    font-family: sans-serif;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 2px;
+    justify-content: center;
+    font-size: 15px;
+    border-bottom: 2px solid gray;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.pravidla {
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 90%;
+    flex-direction: column ;
+    margin-top: 20px;
+    align-items: center;
+}
+.pravidla-cast {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #272727;
+    border-radius: 8px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.pravidla-sekce {
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #272727;
+    border-bottom: 2px solid gold;
+}
+.pravidla-obsah {
+    font-family: sans-serif;
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 24px;
+}
+.cislo-prav {
+    margin-right: 5px;
+    color: goldenrod;
+    font-weight: 600;
+}
+.pravidlo-bg {
+    background-color: rgba(218, 165, 32, 0);
+    border-radius: 8px;
+    margin: 4px;
+}
+.pravidlo {
+    display: flex;
+    margin: 1.5px;
+    background-color: #181818;
+    padding: 6px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.team-cast {
+    margin-bottom: 30px;
+    margin-top: 45px;
+    font-family: sans-serif;
+    color: white;
+    border-bottom: 4px solid #9797977a;
+}
+.team {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    align-items: center;
+    flex-direction: column;
+}
+.team-obsah {
+    color: white;
+    font-family: sans-serif;
+    flex-flow: row wrap;
+    display: flex;
+    grid-gap: 25px;
+    gap: 35px;
+    justify-content: center;
+}
+.member-card {
+    background-color: #35363a;
+    width: 12.9rem;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 10px;
+    flex-direction: column;
+}
+.bar-member {
+    height: 5px;
+    width: 80%;
+    background-color: gold;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#volno-on {
+    content: normal;
+}
+.volno-on {
+    content: "DOVOLENÁ";
+    height: 20px;
+    width: 80%;
+    font-size: 18px;
+    color: rgb(255, 77, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+.member-skin {
+    width: 58%;
+    padding-top: 20px;
+    margin-left: auto ;
+    margin-right: auto;
+}
+.nick-member {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    background-color: #8080804f;
+    padding: 9px;
+    border-radius: 10px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+.rank-member {
+    font-size: 18px;
+    font-weight: 600;
+    color: #8080805e;
+    margin-bottom: 9px;
+}
+.card-body {
+    position: relative;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    flex: 1 1 auto;
+    background-color: #272727;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.obchod-obsah {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    align-items: center;
+    flex-direction: column;
+}
+.obchod-polozka {
+    background-color: #35363a;
+    width: 12.9rem;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 10px;
+    flex-direction: column;
+}
+.cena {
+    color: gold;
+    font-weight: 600;
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #ffffff42;
+}
+.polozka-img {
+    margin-bottom: 10px;
+    width: 70%;
+}
+.obchod-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.polozka-nazev {
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    background-color: #8080804f;
+    padding: 9px;
+    border-radius: 10px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+.zakoupit-polozku {
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    background-color: #19da394f;
+    padding: 9px;
+    border-radius: 10px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+.zakoupit-polozku > a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+footer{
+    background-color: #121212;
+    
+    bottom: -90px;
+    left: 0;
+    z-index: 5;
+    height: 150px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position:relative;
+}
+.footer-link {
+    list-style: none;
+    margin-inline: 50px;
+    display: flex;
+    align-items: center;
+}
+.footer-link > a {
+    color: white;
+    text-decoration: none;
+    font-family: "Kanit",sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 4px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+@keyframes example {
+    0%   {color: #ffffff;}
+    50% {color: #5561f5;}
+    100%  {color: #ffffff;}
+  }
+.footer-link :hover {
+    animation-name: example;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+}
+.madeby {
+    color: white;
+    text-decoration: none;
+    font-family: "Kanit",sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 4px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.prava {
+    color: rgb(125, 125, 125);
+    text-decoration: none;
+    font-family: "Kanit",sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 4px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.BETA {
+    color: rgb(125, 125, 125);
+    text-decoration: none;
+    font-family: "Kanit",sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    padding: 4px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+}
+@media only screen and (max-width: 600px) {
+body {
+    margin: 0;
+    background-color: #1b1b1b;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.body {
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+}
+nav{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 5;
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.nav-link {
+    list-style: none;
+    margin-inline: 40px;
+    margin-bottom: 8px;
+}
+.nav-link > a {
+    color: white;
+    text-decoration: none;
+    font-family: "Kanit",sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0px;
+    position: relative;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+.obchod {
+    list-style: none;
+    margin-inline: 50px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border: 3px solid gold;
+    padding: 3px;
+    border-radius: 50px;
+    left: 0px;
+}
+.obchod > a {
+    color: white;
+    text-decoration: none;
+    font-family: "Kanit",sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 4px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.aktivni {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.background {
+    height: 350px; 
+    width: 100vw;
+    background-image: url(./obrázky/background.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1b1b;
+}
+.sekce {
+    font-family: "Kanit",sans-serif;
+    font-weight: 600;
+    color: gold;
+    font-size: 4.5vw;
+}
+.text-obsah {
+    font-family: sans-serif;
+    color: white;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+.obsah {
+    display: flex;
+    justify-content: center;
+}
+.naserveru-obsah {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 12.5%;
+    width: 75%;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.kolecko-naserveru{
+    background-color: #272727;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin: 10px;
+}
+.naserveru {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #272727;
+    justify-content: center;
+    border-radius: 32px;
+}
+#textnaserveru {
+    height: 45px;
+}
+.body-pravidla {
+    display: flex;
+    justify-content: center;
+}
+.souhlas-pravidla {
+    font-family: sans-serif;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-bottom: 2px;
+    justify-content: center;
+    font-size: 15px;
+    border-bottom: 2px solid gray;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.pravidla {
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 90%;
+    flex-direction: column ;
+    margin-top: 20px;
+    align-items: center;
+}
+.pravidla-cast {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #272727;
+    border-radius: 8px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.pravidla-sekce {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #272727;
+    border-bottom: 2px solid gold;
+}
+.pravidla-obsah {
+    font-family: sans-serif;
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 19px;
+}
+.cislo-prav {
+    margin-right: 5px;
+    color: goldenrod;
+    font-weight: 600;
+}
+.pravidlo {
+    display: flex;
+    margin: 4px;
+    background-color: #181818;
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.team-cast {
+    margin-bottom: 30px;
+    margin-top: 45px;
+    font-family: sans-serif;
+    color: white;
+    border-bottom: 4px solid #9797977a;
+}
+.team {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: 4s content-reviel;
+    animation-fill-mode: forwards;
+}
+.team-obsah {
+    color: white;
+    font-family: sans-serif;
+    flex-flow: row wrap;
+    display: flex;
+    grid-gap: 25px;
+    gap: 35px;
+    justify-content: center;
+}
+.member-card {
+    background-color: #35363a;
+    width: 11.9rem;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 10px;
+    flex-direction: column;
+}
+.bar-member {
+    height: 5px;
+    width: 80%;
+    background-color: gold;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.member-skin {
+    width: 58%;
+    padding-top: 20px;
+    margin-left: auto ;
+    margin-right: auto;
+}
+.nick-member {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    background-color: #8080804f;
+    padding: 9px;
+    border-radius: 10px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+.rank-member {
+    font-size: 13px;
+    font-weight: 600;
+    color: #8080805e;
+    margin-bottom: 5px;
+}
+.card-body {
+    position: relative;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    flex: 1 1 auto;
+    background-color: #272727;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer{
+    background-color: #121212;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    height: 150px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.footer-link {
+    list-style: none;
+    margin-inline: 50px;
+    display: flex;
+    align-items: center;
+}
+.footer-link > a {
+    color: white;
+    text-decoration: none;
+    font-family: "Kanit",sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 4px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+}
+.madeby {
+    color: white;
+    text-decoration: none;
+    font-family: "Kanit",sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 4px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.prava {
+    color: rgb(125, 125, 125);
+    text-decoration: none;
+    font-family: "Kanit",sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 4px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+}
